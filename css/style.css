@@ -1,0 +1,17 @@
+.header--dark {
+    background-color: rgb(51,57,64);
+    fill: rgb(236,236,236);
+}
+
+.header__title {
+    display: inline;
+    font-size: 1.25rem;
+}
+
+.header__search {
+    display: inline;
+}
+
+.search__input {
+    
+}
