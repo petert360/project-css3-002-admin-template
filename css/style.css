@@ -1,6 +1,7 @@
 /* alapbeállítások */
-css html {
+html {
     font-size: 16px;
+    color:rgb(236, 236, 236);
 }
 
 body {
@@ -12,25 +13,29 @@ body {
     box-sizing: border-box;
 }
 
+main {
+    /* display:flex; */
+}
+
+aside {
+    /* display: flex; */
+}
 /* feladat leírás szerinti beállítások */
 
 .header--dark {
     display: flex;
     align-items: center;
-    justify-content: center;
     background-color: rgb(51, 57, 64);
-    fill: rgb(236, 236, 236);
+    color: rgb(236, 236, 236);
 }
 
 .header__title {
-    flex-grow: 1;
+    flex: 1 0 auto;
     font-size: 1.25rem;
 }
 
-
 .header__search {
-    flex-grow: 1;
-    align-items: center;
+    display: flex;
 }
 
 .search__input {
@@ -48,4 +53,73 @@ body {
 
 .search__btn {
     background-color: rgb(0,123,255);
+}
+
+/* Main elemek formázása */
+.content {
+    color: rgb(20,20,20);
+    margin:0;
+}
+
+.main__nav {
+    background-color: rgb(33,37,41);
+}
+
+.nav__ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+}
+
+a {
+    color: rgb(236, 236, 236);
+}
+
+.main__breadcrumb {
+    background-color: rgb(233, 236, 239);
+    border-radius: .25rem;
+    padding: 1rem 1.5rem;
+}
+
+.main__cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main__card {
+    margin: 0;
+    flex: 0 1 auto;
+}
+
+.main__card--blue {
+    background-color: rgb(0,123,255);
+}
+
+.main__card--yellow {
+    background-color: rgb(255,193,7);
+}
+
+.main__card--green {
+    background-color: rgb(40,167,69);
+    
+}
+.main__card--red {
+    background-color: rgb(220,53,69);
+}
+
+.card__top {
+    margin: 1rem 0;
+    padding: .5rem;
+    border-radius: .25rem .25rem 0 0;
+    border: 1px solid;
+    font-size: .9rem;
+}
+
+.card__bottom {
+    margin: 1rem 0;
+    padding: .5rem;
+    border-radius: 0 0 .25rem .25rem;
+    border: 1px solid;
+    font-size: .7rem;
 }

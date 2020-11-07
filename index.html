@@ -31,13 +31,15 @@ OK - A nagyító ikont keresd meg a font-awesome ikonon között és jelenítsd 
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Page</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
-    </head>
+</head>
+
 <body>
     <header class="header--dark">
         <h3 class="header__title">Admin Page</h3>
@@ -46,5 +48,121 @@ OK - A nagyító ikont keresd meg a font-awesome ikonon között és jelenítsd 
             <button class="search__btn"><i class="fa fa-search"></i></button>
         </div>
     </header>
+
+
+    <!-- ### **Main**
+OK - Hozd létre main elemet, a header alá.
+OK - Legyen benne egy aside elem.
+OK - Mellette egy section elem, "content" oszállyal. -->
+
+    <!-- ### **Aside**
+OK - Legyen benne egy nav elem, "main__nav" oszállyal.
+OK - Legyen a háttérszíne 33,37,41
+OK - Legyen benne egy ul elem, "nav__ul" osztállyal.
+- Legyen benne 8 li elem.
+- Az li elemekben legyenek fejlécek vagy linkek, a minta szerinti tartalommal.
+- Az ikonokat is a minta szerint helyezd el a linkek szövege elé, sorrendben:`fa-tachometer, fa-windows, fa-bookmark, fa-area-chart, fa-table` -->
+
+
+    <main>
+        <aside>
+            <nav class="main__nav">
+                <ul class="nav__ul">
+                    <li>
+                        <h3>CORE</h3>
+                    </li>
+                    <li>
+                        <i class="fa fa-tachometer"></i>
+                        <a href="">Dashboard</a>
+                    </li>
+                    <li>
+                        <h3>INTERFACE</h3>
+                    </li>
+                    <li>
+                        <i class="fa fa-windows"></i>
+                        <a href="">Layouts</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-bookmark"></i>
+                        <a href="">Pages</a>
+                    </li>
+                    <li>
+                        <h3>ADDONS</h3>
+                    </li>
+                    <li>
+                        <i class="fa fa-area-chart"></i>
+                        <a href="">Charts</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-table"></i>
+                        <a href="">Tables</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+
+        <!-- ### **Section**
+OK - Legyen a tetején h1 elem "Dashboard" tartalommal.
+OK - Alatta legyen egy breadcrumb, ez egy div legyen, "main__breadcrumb" osztállyal.
+OK - Háttérszíne 233,236,239 legyen.
+OK - A szegély lekerekítése .25 legyen a roothoz képest.
+OK - A felirat benne szintén "Dashboard" legyen.
+OK - A padding fent lent 1, jobb bal oldalon 1.5 legyen a roothoz képest.
+OK - Legyen egy div alatta, "main__cards" osztállyal.
+OK - Legyen benne további négy div, "main__card" osztállyal.
+OK - A main__card divek legyen elosztva két további div -re, ezek osztályai "card__top" és "card__bottom" legyenek.
+- A felsőnek a felső, az alsónak az alsó sarkai legyenek lekerekítve .25 -re a roothoz képest.
+- Mind a négy divhez hozz létre még egy-egy osztályt és rendeld hozzájuk a diveket:
+    - main__card--blue: háttérszín 0,123,255
+    - main__card--yellow: háttérszín 255,193,7
+    - main__card--green: 40,167,69
+    - main__card--red: 220,53,69
+- Állíts be áttűnést a háttérszínre az összes alsó és felső div esetén, .3 másodperc időtartamban.
+- A divek tartalma a minta szerint legyen elkészítve. -->
+
+        <section class="content">
+            <h1>Dashboard</h1>
+            <div class="main__breadcrumb">
+                <p>Dashboard</p>
+            </div>
+            <!-- <div class="main__cards">
+                <div class="main__card main__card--blue">
+                    <div class="card__top">
+                        <h3>Primary Card</h3>
+                    </div>
+                    <div class="card__bottom">
+                        <h4>View Details</h4>
+                    </div>
+                </div>
+                <div class="main__card main__card--yellow">
+                    <div class="card__top">
+                        <h3>Warning Card</h3>
+                    </div>
+                    <div class="card__bottom">
+                        <h4>View Details</h4>
+                    </div>
+                </div>
+                <div class="main__card main__card--green">
+                    <div class="card__top">
+                        <h3>Success Card</h3>
+                    </div>
+                    <div class="card__bottom">
+                        <h4>View Details</h4>
+                    </div>
+                </div>
+                <div class="main__card main__card--red">
+                    <div class="card__top">
+                        <h3>Danger Card</h3>
+                    </div>
+                    <div class="card__bottom">
+                        <h4>View Details</h4>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+    </main>
+
 </body>
+
 </html>
