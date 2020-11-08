@@ -43,10 +43,14 @@ OK - A nagyító ikont keresd meg a font-awesome ikonon között és jelenítsd 
 <body>
     <header class="header--dark">
         <h3 class="header__title">Admin Page</h3>
+        <i class="fa fa-bars"></i>
         <div class="header__search">
             <input class="search__input" type="text" name="" id="" placeholder="Search for...">
             <button class="search__btn"><i class="fa fa-search"></i></button>
         </div>
+        <i class="fa fa-user"></i>
+        <i class="fa fa-caret-down"></i>
+
     </header>
 
 
@@ -71,9 +75,9 @@ OK - Legyen benne egy ul elem, "nav__ul" osztállyal.
                     <li>
                         <h5>CORE</h5>
                     </li>
-                    <li>
+                    <li class="nav__li__actual">
                         <i class="fa fa-tachometer"></i>
-                        <a href="index.html">Dashboard</a>
+                        <a class="a__actual" href="index.html">Dashboard</a>
                     </li>
                     <li>
                         <h5>INTERFACE</h5>
@@ -96,6 +100,13 @@ OK - Legyen benne egy ul elem, "nav__ul" osztállyal.
                     <li>
                         <i class="fa fa-table"></i>
                         <a href="#">Tables</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="a__item_first fa fa-table"></i>
+                            <span class="a__item_second">Testing</span>
+                            <i class="a__item_third fa fa-table"></i>
+                        </a>
                     </li>
                 </ul>
             </nav>
