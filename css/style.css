@@ -8,7 +8,7 @@ html {
 body {
     margin: 0;
     /* padding: 0; */
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 * {
@@ -68,20 +68,19 @@ body {
 .fa-bars {
     flex: 7 0 auto;
     font-size: 1.1rem;
-    color: rgb(153,158,161);
+    color: rgb(153, 158, 161);
 }
 
 .fa-user {
     padding: 1rem .5rem 1rem 1rem;
     font-size: 1.1rem;
-    color: rgb(153,158,161);
+    color: rgb(153, 158, 161);
 }
 
 .fa-caret-down {
     font-size: 1.1rem;
-    color: rgb(153,158,161);
+    color: rgb(153, 158, 161);
 }
-
 
 /* Main elemek formázása */
 
@@ -91,7 +90,7 @@ main {
 
 aside {
     display: flex;
-    flex:0 1 auto;
+    flex: 0 1 auto;
     height: 100vw;
 }
 
@@ -116,41 +115,50 @@ aside {
 
 li {
     padding: .6rem 0;
-    color: rgb(100,100,100);
+    color: rgb(100, 100, 100);
+}
+
+.nav__header {
+    margin: 0.5rem 0;
 }
 
 a {
     display: flex;
     flex-flow: row;
     align-items: center;
-    color: rgb(100,100,100);
+    justify-content: flex-start;
+    color: rgb(100, 100, 100);
     text-decoration: none;
 }
 
-.a__item_first {
+.a__item__fa {
     flex: 0 1 auto;
-}
-.a__item_second {
-    flex: 1 0 auto;
-}
-.a__item_third {
-    flex: 5 0 auto;
+    min-width: 1.5rem;
 }
 
-.nav__li__actual, .a__actual{
-    color: rgb(236, 236, 236);;
+.a__item__txt {
+    flex: 1 0 auto;
 }
-  
+
+.a__item__arrow {
+    flex: 0 1 auto;
+}
+
+.nav__li__actual, .a__actual {
+    color: rgb(236, 236, 236);
+    ;
+}
+
 p {
     margin: 0;
 }
-
 
 .main__breadcrumb {
     background-color: rgb(233, 236, 239);
     border-radius: .25rem;
     padding: 1rem 1.5rem;
-    margin-bottom: 1rem;;
+    margin-bottom: 1rem;
+    ;
 }
 
 .main__cards {
@@ -164,6 +172,7 @@ p {
     display: flex;
     flex-flow: column;
     flex: 1 0 auto;
+    margin: 0;
     /* margin: 1rem 0; */
     /* padding: .5rem; */
     /* min-width: 200px; */
@@ -193,10 +202,13 @@ p {
     color: rgb(236, 236, 236);
     padding: .8rem 1.5rem;
     transition: background-color .3s;
-    border-bottom: 1px solid rgba(0,0,0,.08);
+    border-bottom: 1px solid rgba(0, 0, 0, .08);
 }
 
 .card__bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     color: rgb(236, 236, 236);
     border-radius: 0 0 .25rem .25rem;
     font-size: .7rem;
@@ -204,10 +216,20 @@ p {
     transition: background-color .3s;
 }
 
+
+.card__bottom__txt {
+    flex: 1 0 auto;
+    font-size: .8rem;
+}
+
+.card__bottom__chevron {
+    flex: 0 1 auto;
+}
+
 .card__top:hover {
-    background-color: rgba(0,0,0,.05);
+    background-color: rgba(0, 0, 0, .05);
 }
 
 .card__bottom:hover {
-    background-color: rgba(0,0,0,.05);
+    background-color: rgba(0, 0, 0, .05);
 }
