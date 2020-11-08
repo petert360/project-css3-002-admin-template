@@ -59,25 +59,19 @@ body {
     border-radius: 0px 4px 4px 0px;
 }
 
-/* 
-.fa{
-    text-align: center;
-    min-width: 20px;
-} */
-
-.fa-bars {
+.fa.fa-bars {
     flex: 7 0 auto;
     font-size: 1.1rem;
     color: rgb(153, 158, 161);
 }
 
-.fa-user {
+.fa.fa-user {
     padding: 1rem .5rem 1rem 1rem;
     font-size: 1.1rem;
     color: rgb(153, 158, 161);
 }
 
-.fa-caret-down {
+.fa.fa-caret-down {
     font-size: 1.1rem;
     color: rgb(153, 158, 161);
 }
@@ -158,13 +152,11 @@ p {
     border-radius: .25rem;
     padding: 1rem 1.5rem;
     margin-bottom: 1rem;
-    ;
 }
 
 .main__cards {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
 }
 
 .main__card {
@@ -172,10 +164,6 @@ p {
     display: flex;
     flex-flow: column;
     flex: 1 0 auto;
-    margin: 0;
-    /* margin: 1rem 0; */
-    /* padding: .5rem; */
-    /* min-width: 200px; */
 }
 
 .main__card--blue {
@@ -198,9 +186,9 @@ p {
 
 .card__top {
     border-radius: .25rem .25rem 0 0;
-    font-size: .9rem;
+    font-size: 1rem;
     color: rgb(236, 236, 236);
-    padding: .8rem 1.5rem;
+    padding: 1.3rem 1.5rem;
     transition: background-color .3s;
     border-bottom: 1px solid rgba(0, 0, 0, .08);
 }
@@ -211,19 +199,17 @@ p {
     align-items: center;
     color: rgb(236, 236, 236);
     border-radius: 0 0 .25rem .25rem;
-    font-size: .7rem;
-    padding: .3rem 1.5rem;
+    padding: .6rem 1.5rem;
     transition: background-color .3s;
 }
-
 
 .card__bottom__txt {
     flex: 1 0 auto;
     font-size: .8rem;
 }
 
-.card__bottom__chevron {
-    flex: 0 1 auto;
+.fa.fa-chevron-right {
+    font-size: .8rem;
 }
 
 .card__top:hover {
