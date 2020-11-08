@@ -34,7 +34,7 @@ body {
 }
 
 .header__title {
-    display: inline-block;
+    display: inline;
     float: left;
     /* flex: 1 0 auto; FLEX*/
     font-size: 1.25rem;
@@ -45,7 +45,9 @@ body {
 .header__search {
     /* display: flex; FLEX */
     float: right;
-    display: inline-block;
+    display: inline;
+    vertical-align: middle;
+    position: static;
     margin-right: 1rem;
 }
 
